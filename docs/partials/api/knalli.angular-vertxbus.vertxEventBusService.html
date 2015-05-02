@@ -35,6 +35,98 @@ module.controller('MyController', function('vertxEventService') {
 <li><code ng:non-bindable=""><a href="#/api/ng.$log">$log</a></code>
 </li>
 </ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_ensureopenauthconnection">ensureOpenAuthConnection(fn)</h3>
+<div class="ensureopenauthconnection"><div class="-ensureopenauthconnection-page"><p>Ensures the callback will be performed with a valid session.</p>
+<p>Unless <code>loginRequired</code> is enabled, this will be simple forward.</p>
+<p>Unless a valid session exist (but required), the callback will be not invoked.</p>
+</div><h5 id="methods_ensureopenauthconnection_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>fn</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-ensureopenauthconnection-page"><p>callback</p>
+</div></td></tr></tbody></table><h5 id="methods_ensureopenauthconnection_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-ensureopenauthconnection-page"><p>false if the callback could be performed or queued</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_ensureopenconnection">ensureOpenConnection(fn)</h3>
+<div class="ensureopenconnection"><div class="-ensureopenconnection-page"><p>Ensures the callback will be performed with an open connection.</p>
+<p>Unless an open connection was found, the callback will be queued in the message buffer (if available).</p>
+</div><h5 id="methods_ensureopenconnection_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>fn</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-ensureopenconnection-page"><p>callback</p>
+</div></td></tr></tbody></table><h5 id="methods_ensureopenconnection_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-ensureopenconnection-page"><p>false if the callback could be performed or queued</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getconnectionstate">getConnectionState(immediate)</h3>
+<div class="getconnectionstate"><div class="-getconnectionstate-page"><p>Returns the current connection state. The state is being cached internally.</p>
+</div><h5 id="methods_getconnectionstate_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>immediate <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-getconnectionstate-page"><p>if true, the connection state will be queried directly.</p>
+</div> <p><em>(default: false)</em></p></td></tr></tbody></table><h5 id="methods_getconnectionstate_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-number">number</a></td><td><div class="-getconnectionstate-page"><p>state type of vertx.EventBus</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_isconnectionopen">isConnectionOpen()</h3>
+<div class="isconnectionopen"><div class="-isconnectionopen-page"><p>Returns true if the current connection state (<a href="#/api/knalli.angular-vertxbus.vertxEventBusService#methods_getconnectionstate">getConnectionState()</a>) is <code>OPEN</code>.</p>
+</div><h5 id="methods_isconnectionopen_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-isconnectionopen-page"><p>connection open state</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_isconnectionopen">isConnectionOpen()</h3>
+<div class="isconnectionopen"><div class="-isconnectionopen-page"><p>Returns the current amount of messages in the internal buffer.</p>
+</div><h5 id="methods_isconnectionopen_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-number">number</a></td><td><div class="-isconnectionopen-page"><p>amount</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_isenabled">isEnabled()</h3>
+<div class="isenabled"><div class="-isenabled-page"><p>Returns true if service is being enabled.</p>
+</div><h5 id="methods_isenabled_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-isenabled-page"><p>state</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_isvalidsession">isValidSession()</h3>
+<div class="isvalidsession"><div class="-isvalidsession-page"><p>Returns true if the session is valid</p>
+</div><h5 id="methods_isvalidsession_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-isvalidsession-page"><p>state</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_login">login(username, password, timeout)</h3>
+<div class="login"><div class="-login-page"><p>Sends a login request</p>
+<p>See also</p>
+<ul>
+<li><a href="#/api/knalli.angular-vertxbus.vertxEventBus#methods_login">vertxEventBus.login()</a></li>
+</ul>
+</div><h5 id="methods_login_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>username</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-login-page"><p>credential&#39;s username</p>
+</div></td></tr><tr><td>password</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-login-page"><p>credential&#39;s password</p>
+</div></td></tr><tr><td>timeout <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-number">number</a></td><td><div class="-login-page"><p>timeout</p>
+</div> <p><em>(default: 5000)</em></p></td></tr></tbody></table><h5 id="methods_login_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-login-page"><p>promise</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_observe">observe(observer)</h3>
+<div class="observe"><div class="-observe-page"><p>Adds an observer</p>
+</div><h5 id="methods_observe_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>observer</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-observe-page"><p>observer</p>
+</div><table><thead><tr><th>Property</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>afterEventbusConnected <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-observe-page"><p>will be called after establishing a new connection</p>
+</div></td></tr></tbody></table></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_publish">publish(address, message)</h3>
+<div class="publish"><div class="-publish-page"><p>Publishes a message to the specified address (using <a href="#/api/knalli.angular-vertxbus.vertxEventBus#methods_publish">vertxEventBus.publish()</a>).</p>
+</div><h5 id="methods_publish_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-publish-page"><p>target address</p>
+</div></td></tr><tr><td>message</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-publish-page"><p>payload message</p>
+</div></td></tr></tbody></table><h5 id="methods_publish_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-publish-page"><p>false if cannot be send or queued</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_registerhandler">registerHandler(address, callback)</h3>
+<div class="registerhandler"><div class="-registerhandler-page"><p>Registers a callback handler for the specified address match.</p>
+</div><h5 id="methods_registerhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-registerhandler-page"><p>target address</p>
+</div></td></tr><tr><td>callback</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-registerhandler-page"><p>handler with params <code>(message, replyTo)</code></p>
+</div></td></tr></tbody></table><h5 id="methods_registerhandler_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-function">function=</a></td><td><div class="-registerhandler-page"><p>deconstructor</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_send">send(address, message, timeout, expectReply)</h3>
+<div class="send"><div class="-send-page"><p>Sends a message to the specified address (using <a href="#/api/knalli.angular-vertxbus.vertxEventBus#methods_send">vertxEventBus.send()</a>).</p>
+</div><h5 id="methods_send_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-send-page"><p>target address</p>
+</div></td></tr><tr><td>message</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>payload message</p>
+</div></td></tr><tr><td>timeout <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-number">number</a></td><td><div class="-send-page"><p>timeout (in ms) after which the promise will be rejected</p>
+</div> <p><em>(default: 10000)</em></p></td></tr><tr><td>expectReply <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-send-page"><p>if false, the promise will be resolved directly and
+no replyHandler will be created</p>
+</div> <p><em>(default: true)</em></p></td></tr></tbody></table><h5 id="methods_send_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>promise</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_unregisterhandler">unregisterHandler(address, callback)</h3>
+<div class="unregisterhandler"><div class="-unregisterhandler-page"><p>Removes a callback handler for the specified address match.</p>
+</div><h5 id="methods_unregisterhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-unregisterhandler-page"><p>target address</p>
+</div></td></tr><tr><td>callback</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-unregisterhandler-page"><p>handler with params <code>(message, replyTo)</code></p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
 <div class="member event"><h2 id="events">Events</h2>
 <ul class="events"><li><h3 id="events_connected">connected</h3>
 <div class="connected"><div class="connected-page"><p>After a connection was being established</p>
