@@ -65,6 +65,7 @@ NG_DOCS={
   "editExample": true,
   "startPage": "/api",
   "scripts": [
+    "angular.min.js",
     "github-badge.js"
   ]
 };
