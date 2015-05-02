@@ -1,0 +1,37 @@
+<h1><code ng:non-bindable=""></code>
+<div><span class="hint"></span>
+</div>
+</h1>
+<div><div class="knalli-angular-vertxbus-page"><p>Client side library using VertX Event Bus as an Angular Service module</p>
+<p>You have to define the module dependency, this module is named <code>knalli.angular-vertxbus</code>.</p>
+<pre class="prettyprint linenums">
+  angular.module('app', ['knalli.angular-vertxbus'])
+    .controller('MyCtrl', function(vertxEventBus, vertxEventBusService) {
+
+      // using the EventBus directly
+      vertxEventBus.send('my.address', {data: 123}, function (reply) {
+        // your reply comes here
+      });
+
+      // using the service
+      vertxEventBusService.send('my.address', {data: 123}, {timeout: 500})
+        .then(function (reply) {
+          // your reply comes here
+        })
+        .catch(function (err) {
+          // something went wrong, no connection, no login, timed out, or so
+        });
+    });
+</pre>
+<p>The module itself provides following components:</p>
+<ul>
+<li><a href="#/api/knalli.angular-vertxbus.vertxEventBus">vertxEventBus</a>: a low level wrapper around <code>vertx.EventBus</code></li>
+<li><a href="#/api/knalli.angular-vertxbus.vertxEventBusService">vertxEventBusService</a>: a high level service around the wrapper</li>
+</ul>
+<p>While the wrapper only provides one single instance (even on reconnects), the service supports automatically
+reconnect management, authorization and a clean promise based api.</p>
+<p>If you are looking for a low integration of <code>vertxbus.EventBus</code> as an AngularJS component, the wrapper will be your
+choice. The only difference (and requirement for the wrapper actually) is how it will manage and replace the
+underlying instance of the current <code>vertx.EventBus</code>.</p>
+<p>However, if you are looking for a simple, clean and promised based high api, the service is much better you.</p>
+</div></div>

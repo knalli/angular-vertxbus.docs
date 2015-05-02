@@ -1,0 +1,61 @@
+<h1><code ng:non-bindable="">vertxEventBusProvider</code>
+<div><span class="hint">service in module <code ng:non-bindable="">knalli.angular-vertxbus</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="knalli-angular-vertxbus-vertxeventbusprovider-page"><p>An AngularJS wrapper for projects using the VertX Event Bus</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_enable">enable(value)</h3>
+<div class="enable"><div class="-enable-page"><p>Enables or disables the service. This setup is immutable.</p>
+</div><h5 id="methods_enable_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-enable-page"><p>service is enabled on startup</p>
+</div> <p><em>(default: true)</em></p></td></tr></tbody></table><h5 id="methods_enable_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-enable-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_usedebug">useDebug(value)</h3>
+<div class="usedebug"><div class="-usedebug-page"><p>Enables a verbose mode in which certain events will be logged to <code>$log</code>.</p>
+</div><h5 id="methods_usedebug_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-usedebug-page"><p>verbose mode (using <code>$log</code>)</p>
+</div> <p><em>(default: false)</em></p></td></tr></tbody></table><h5 id="methods_usedebug_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-usedebug-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_usereconnect">useReconnect(value)</h3>
+<div class="usereconnect"><div class="-usereconnect-page"><p>Enables or disables the automatic reconnect handling.</p>
+</div><h5 id="methods_usereconnect_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-usereconnect-page"><p>if a disconnect was being noted, a reconnect will be enforced automatically</p>
+</div> <p><em>(default: true)</em></p></td></tr></tbody></table><h5 id="methods_usereconnect_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-usereconnect-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_usesockjsoptions">useSockJsOptions(value)</h3>
+<div class="usesockjsoptions"><div class="-usesockjsoptions-page"><p>Sets additional params for the <code>SockJS</code> instance.</p>
+<p>Internally, it will be applied (as <code>options</code>) like <code>new SockJS(url, undefined, options)</code>.</p>
+</div><h5 id="methods_usesockjsoptions_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-usesockjsoptions-page"><p>optional params for raw SockJS options</p>
+</div> <p><em>(default: {})</em></p></td></tr></tbody></table><h5 id="methods_usesockjsoptions_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-usesockjsoptions-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_usesockjsreconnectinterval">useSockJsReconnectInterval(value)</h3>
+<div class="usesockjsreconnectinterval"><div class="-usesockjsreconnectinterval-page"><p>Overrides the timeout for reconnecting after a disconnect was found.</p>
+</div><h5 id="methods_usesockjsreconnectinterval_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-usesockjsreconnectinterval-page"><p>time between a disconnect and the next try to reconnect (in ms)</p>
+</div> <p><em>(default: 10000)</em></p></td></tr></tbody></table><h5 id="methods_usesockjsreconnectinterval_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-usesockjsreconnectinterval-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_useurlpath">useUrlPath(value)</h3>
+<div class="useurlpath"><div class="-useurlpath-page"><p>Overrides the url part &quot;path&quot; for connection.</p>
+</div><h5 id="methods_useurlpath_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-useurlpath-page"><p>path to connect</p>
+</div> <p><em>(default: '/eventbus')</em></p></td></tr></tbody></table><h5 id="methods_useurlpath_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-useurlpath-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_useurlserver">useUrlServer(value)</h3>
+<div class="useurlserver"><div class="-useurlserver-page"><p>Overrides the url part &quot;server&quot; for connecting. The default is based on</p>
+<ul>
+<li><code>location.protocol</code></li>
+<li><code>location.hostname</code></li>
+<li><code>location.port</code></li>
+</ul>
+<p>i.e. <code>http://domain.tld</code> or <code>http://domain.tld:port</code></p>
+</div><h5 id="methods_useurlserver_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-useurlserver-page"><p>server to connect (default based on <code>location.protocol</code>, <code>location.hostname</code> and <code>location.port</code>)</p>
+</div> <p><em>(default: $computed)</em></p></td></tr></tbody></table><h5 id="methods_useurlserver_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-useurlserver-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

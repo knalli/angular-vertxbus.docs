@@ -1,0 +1,89 @@
+<h1><code ng:non-bindable="">vertxEventBusService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">knalli.angular-vertxbus</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="knalli-angular-vertxbus-vertxeventbusservice-page"><p>A service utilizing an underlaying Vert.x Event Bus</p>
+<p>The advanced features of this service are:</p>
+<ul>
+<li>broadcasting the connection changes (vertx-eventbus.system.connected, vertx-eventbus.system.disconnected) on $rootScope</li>
+<li>registering all handlers again when a reconnect had been required</li>
+<li>supporting a promise when using send()</li>
+<li>adding aliases on (registerHandler), un (unregisterHandler) and emit (publish)</li>
+</ul>
+<p>Basic usage:
+<pre class="prettyprint linenums">
+module.controller('MyController', function('vertxEventService') {
+  vertxEventService.on('my.address', function(message) {
+    console.log("JSON Message received: ", message)
+  });
+  vertxEventService.publish('my.other.address', {type: 'foo', data: 'bar'});
+});
+</pre>
+<p>Note the additional <a href="#/api/knalli.angular-vertxbus.vertxEventBusServiceProvider">configuration</a> of the module itself.</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/api/knalli.angular-vertxbus.vertxEventBus">vertxEventBus</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/ng.$rootScope">$rootScope</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/ng.$q">$q</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/ng.$interval">$interval</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/ng.$log">$log</a></code>
+</li>
+</ul>
+<div class="member event"><h2 id="events">Events</h2>
+<ul class="events"><li><h3 id="events_connected">connected</h3>
+<div class="connected"><div class="connected-page"><p>After a connection was being established</p>
+<p>Event name is <code>prefix + &#39;system.connected&#39;</code> (see <a href="#/api/knalli.angular-vertxbus.vertxEventBusServiceProvider#methods_useprefix">prefix</a>)</p>
+</div><div class="inline"><h4 id="events_connected_type">Type:</h4>
+<div class="type">broadcast</div>
+</div>
+<div class="inline"><h4 id="events_connected_target">Target:</h4>
+<div class="target">$rootScope</div>
+</div>
+</div>
+</li>
+<li><h3 id="events_disconnected">disconnected</h3>
+<div class="disconnected"><div class="disconnected-page"><p>After a connection was being terminated.</p>
+<p>Event name is <code>prefix + &#39;system.disconnected&#39;</code> (see <a href="#/api/knalli.angular-vertxbus.vertxEventBusServiceProvider#methods_useprefix">prefix</a>)</p>
+</div><div class="inline"><h4 id="events_disconnected_type">Type:</h4>
+<div class="type">broadcast</div>
+</div>
+<div class="inline"><h4 id="events_disconnected_target">Target:</h4>
+<div class="target">$rootScope</div>
+</div>
+</div>
+</li>
+<li><h3 id="events_login-failed">login-failed</h3>
+<div class="login-failed"><div class="login-failed-page"><p>After a login has been destroyed or was invalidated</p>
+<p>Event name is <code>prefix + &#39;system.login.failed&#39;</code> (see <a href="#/api/knalli.angular-vertxbus.vertxEventBusServiceProvider#methods_useprefix">prefix</a>)</p>
+</div><div class="inline"><h4 id="events_login-failed_type">Type:</h4>
+<div class="type">broadcast</div>
+</div>
+<div class="inline"><h4 id="events_login-failed_target">Target:</h4>
+<div class="target">$rootScope</div>
+</div>
+<h5 id="events_login-failed_target_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>data</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="login-failed-page"><p>data</p>
+</div><table><thead><tr><th>Property</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>status</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="login-failed-page"><p>must be not<code>&#39;ok&#39;</code></p>
+</div></td></tr></tbody></table></td></tr></tbody></table></div>
+</li>
+<li><h3 id="events_login-succeeded">login-succeeded</h3>
+<div class="login-succeeded"><div class="login-succeeded-page"><p>After a login has been validated successfully</p>
+<p>Event name is <code>prefix + &#39;system.login.succeeded&#39;</code> (see <a href="#/api/knalli.angular-vertxbus.vertxEventBusServiceProvider#methods_useprefix">prefix</a>)</p>
+</div><div class="inline"><h4 id="events_login-succeeded_type">Type:</h4>
+<div class="type">broadcast</div>
+</div>
+<div class="inline"><h4 id="events_login-succeeded_target">Target:</h4>
+<div class="target">$rootScope</div>
+</div>
+<h5 id="events_login-succeeded_target_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>data</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="login-succeeded-page"><p>data</p>
+</div><table><thead><tr><th>Property</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>status</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="login-succeeded-page"><p>must be <code>&#39;ok&#39;</code></p>
+</div></td></tr></tbody></table></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+</div>

@@ -1,0 +1,50 @@
+<h1><code ng:non-bindable="">vertxEventBusServiceProvider</code>
+<div><span class="hint">service in module <code ng:non-bindable="">knalli.angular-vertxbus</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="knalli-angular-vertxbus-vertxeventbusserviceprovider-page"><p>This is the configuration provider for <a href="#/api/knalli.angular-vertxbus.vertxEventBusService">knalli.angular-vertxbus.vertxEventBusService</a>.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_enable">enable(value)</h3>
+<div class="enable"><div class="-enable-page"><p>Enables or disables the service. This setup is immutable.</p>
+</div><h5 id="methods_enable_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-enable-page"><p>service is enabled on startup</p>
+</div> <p><em>(default: true)</em></p></td></tr></tbody></table><h5 id="methods_enable_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-enable-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_requirelogin">requireLogin(value)</h3>
+<div class="requirelogin"><div class="-requirelogin-page"><p>Defines whether a login is being required or not.</p>
+</div><h5 id="methods_requirelogin_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-requirelogin-page"><p>defines requirement of a valid session</p>
+</div> <p><em>(default: false)</em></p></td></tr></tbody></table><h5 id="methods_requirelogin_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-requirelogin-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_usedebug">useDebug(value)</h3>
+<div class="usedebug"><div class="-usedebug-page"><p>Enables a verbose mode in which certain events will be logged to <code>$log</code>.</p>
+</div><h5 id="methods_usedebug_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-usedebug-page"><p>verbose mode (using <code>$log</code>)</p>
+</div> <p><em>(default: false)</em></p></td></tr></tbody></table><h5 id="methods_usedebug_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-usedebug-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_usemessagebuffer">useMessageBuffer(value)</h3>
+<div class="usemessagebuffer"><div class="-usemessagebuffer-page"><p>Enables buffering of (sending) messages.</p>
+<p>The setting defines the total amount of buffered messages (<code>0</code> no buffering). A message will be buffered if
+connection is still in progress, the connection is stale or a login is required/pending.</p>
+</div><h5 id="methods_usemessagebuffer_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-usemessagebuffer-page"><p>allowed total amount of messages in the buffer</p>
+</div> <p><em>(default: 0)</em></p></td></tr></tbody></table><h5 id="methods_usemessagebuffer_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-usemessagebuffer-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_useprefix">usePrefix(value)</h3>
+<div class="useprefix"><div class="-useprefix-page"><p>Overrides the default prefix which will be used for emitted events.</p>
+</div><h5 id="methods_useprefix_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-useprefix-page"><p>prefix used in event names</p>
+</div> <p><em>(default: 'vertx-eventbus.')</em></p></td></tr></tbody></table><h5 id="methods_useprefix_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-useprefix-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_usesockjsstateinterval">useSockJsStateInterval(value)</h3>
+<div class="usesockjsstateinterval"><div class="-usesockjsstateinterval-page"><p>Overrides the interval of checking the connection is still valid (required for reconnecting automatically).</p>
+</div><h5 id="methods_usesockjsstateinterval_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-usesockjsstateinterval-page"><p>interval of checking the underlying connection&#39;s state (in ms)</p>
+</div> <p><em>(default: 10000)</em></p></td></tr></tbody></table><h5 id="methods_usesockjsstateinterval_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-usesockjsstateinterval-page"><p>this</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>
