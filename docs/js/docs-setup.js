@@ -63,7 +63,7 @@ NG_DOCS={
   },
   "html5Mode": false,
   "editExample": true,
-  "startPage": "/api",
+  "startPage": "/api/knalli.angular-vertxbus",
   "scripts": [
     "angular.min.js",
     "github-badge.js"
