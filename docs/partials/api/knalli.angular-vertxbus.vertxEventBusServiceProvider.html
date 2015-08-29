@@ -8,7 +8,7 @@
 </div></div>
 <div class="member method"><h2 id="methods">Methods</h2>
 <ul class="methods"><li><h3 id="methods_configurelogininterceptor">configureLoginInterceptor(the, optional)</h3>
-<div class="configurelogininterceptor"><div class="-configurelogininterceptor-page"><p>Configures and defines a login interceptor corresponding for the option <code>loginRequired</code>.</p>
+<div class="configurelogininterceptor"><div class="-configurelogininterceptor-page"><p>Configures and defines a login interceptor corresponding for the option #requireLogin().</p>
 <p>This utilizes #useLoginInterceptor and is available as a convenient method.</p>
 <p>At default, the created request will look similar like vertx.basicauthmanager.login.</p>
 </div><h5 id="methods_configurelogininterceptor_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>the</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-configurelogininterceptor-page"><p>address to send</p>
@@ -38,7 +38,7 @@
 <div class="uselogininterceptor"><div class="-uselogininterceptor-page"><p>Defines a login interceptor corresponding for the option <code>loginRequired</code>.</p>
 <p>The argument must be a valid function reference with four arguments</p>
 <ul>
-<li>send (an at runtime injected function for actual sending: i.e. <code>send(username, password, next)</code></li>
+<li>send (an at runtime injected function for actual sending: i.e. <code>send(address, message, next)</code></li>
 <li>username (the used username)</li>
 <li>password (the used password)</li>
 <li>next (the callback function reference)</li>
