@@ -11,7 +11,6 @@ This stub ensures only one object holding the current active instance of the bus
 <p>The stub supports theses Vert.x Event Bus APIs:</p>
 <ul>
 <li><a href="#/api/knalli.angular-vertxbus.vertxEventBus#methods_close">close()</a></li>
-<li><a href="#/api/knalli.angular-vertxbus.vertxEventBus#methods_login">login(username, password, replyHandler)</a></li>
 <li><a href="#/api/knalli.angular-vertxbus.vertxEventBus#methods_send">send(address, message, handler)</a></li>
 <li><a href="#/api/knalli.angular-vertxbus.vertxEventBus#methods_publish">publish(address, message)</a></li>
 <li><a href="#/api/knalli.angular-vertxbus.vertxEventBus#methods_registerhandler">registerHandler(adress, handler)</a></li>
@@ -35,7 +34,7 @@ This stub ensures only one object holding the current active instance of the bus
 <p>Note: If automatic reconnection is active, a new connection will be established after the <a href="#/api/knalli.angular-vertxbus.vertxEventBusProvider#methods_usereconnect">reconnect timeout</a>.</p>
 <p>See also:</p>
 <ul>
-<li><a href="#/api/vertx.EventBus#methods_close">vertx.EventBus.close()</a></li>
+<li><a href="#/api/EventBus#methods_close">EventBus.close()</a></li>
 </ul>
 </div></div>
 </li>
@@ -45,22 +44,11 @@ This stub ensures only one object holding the current active instance of the bus
 </div></td></tr><tr><td>urlPath</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-configureconnect-page"><p>see <a href="#/api/knalli.angular-vertxbus.vertxEventBusProvider#methods_useurlpath">vertxEventBusProvider.useUrlPath()</a></p>
 </div> <p><em>(default: /eventbus)</em></p></td></tr></tbody></table></div>
 </li>
-<li><h3 id="methods_login">login(username, password, replyHandler)</h3>
-<div class="login"><div class="-login-page"><p>Sends a login request against the vertxbus</p>
-<p>See also:</p>
-<ul>
-<li><a href="#/api/vertx.EventBus#methods_login">vertx.EventBus.login()</a></li>
-</ul>
-</div><h5 id="methods_login_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>username</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-login-page"><p>credential&#39;s username</p>
-</div></td></tr><tr><td>password</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-login-page"><p>credential&#39;s password</p>
-</div></td></tr><tr><td>replyHandler <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-login-page"><p>optional callback</p>
-</div></td></tr></tbody></table></div>
-</li>
 <li><h3 id="methods_publish">publish(address, message)</h3>
 <div class="publish"><div class="-publish-page"><p>Publishes a message</p>
 <p>See also:</p>
 <ul>
-<li><a href="#/api/vertx.EventBus#methods_publish">vertx.EventBus.publish()</a></li>
+<li><a href="#/api/EventBus#methods_publish">EventBus.publish()</a></li>
 </ul>
 </div><h5 id="methods_publish_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-publish-page"><p>target address</p>
 </div></td></tr><tr><td>message</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-publish-page"><p>payload message</p>
@@ -68,11 +56,7 @@ This stub ensures only one object holding the current active instance of the bus
 </li>
 <li><h3 id="methods_readystate">readyState()</h3>
 <div class="readystate"><div class="-readystate-page"><p>Returns the current connection state</p>
-<p>See also:</p>
-<ul>
-<li><a href="#/api/vertx.EventBus#methods_readystate">vertx.EventBus.readyState()</a></li>
-</ul>
-</div><h5 id="methods_readystate_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-number">number</a></td><td><div class="-readystate-page"><p>value of vertxbus connection states</p>
+</div><h5 id="methods_readystate_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-number">number</a></td><td><div class="-readystate-page"><p>value of vertx-eventbus connection states</p>
 </div></td></tr></table></div>
 </li>
 <li><h3 id="methods_reconnect">reconnect(immediately)</h3>
@@ -87,7 +71,7 @@ default timeout for reconnect will be skipped.</p>
 <div class="registerhandler"><div class="-registerhandler-page"><p>Registers a listener</p>
 <p>See also:</p>
 <ul>
-<li><a href="#/api/vertx.EventBus#methods_registerhandler">vertx.EventBus.registerHandler()</a></li>
+<li><a href="#/api/EventBus#methods_registerhandler">EventBus.registerHandler()</a></li>
 </ul>
 </div><h5 id="methods_registerhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-registerhandler-page"><p>target address</p>
 </div></td></tr><tr><td>handler</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-registerhandler-page"><p>callback handler</p>
@@ -97,7 +81,7 @@ default timeout for reconnect will be skipped.</p>
 <div class="send"><div class="-send-page"><p>Sends a message</p>
 <p>See also:</p>
 <ul>
-<li><a href="#/api/vertx.EventBus#methods_send">vertx.EventBus.send()</a></li>
+<li><a href="#/api/EventBus#methods_send">EventBus.send()</a></li>
 </ul>
 </div><h5 id="methods_send_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-send-page"><p>target address</p>
 </div></td></tr><tr><td>message</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>payload message</p>
@@ -109,7 +93,7 @@ default timeout for reconnect will be skipped.</p>
 <div class="unregisterhandler"><div class="-unregisterhandler-page"><p>Removes a registered a listener</p>
 <p>See also:</p>
 <ul>
-<li><a href="#/api/vertx.EventBus#methods_unregisterhandler">vertx.EventBus.unregisterHandler()</a></li>
+<li><a href="#/api/EventBus#methods_unregisterhandler">EventBus.unregisterHandler()</a></li>
 </ul>
 </div><h5 id="methods_unregisterhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-unregisterhandler-page"><p>target address</p>
 </div></td></tr><tr><td>handler</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-unregisterhandler-page"><p>callback handler to be removed</p>

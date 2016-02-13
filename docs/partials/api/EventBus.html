@@ -1,29 +1,18 @@
 <h1><code ng:non-bindable="">EventBus</code>
-<div><span class="hint">service in module <code ng:non-bindable="">vertx</code>
-</span>
+<div><span class="hint"></span>
 </div>
 </h1>
 <div><h2 id="description">Description</h2>
-<div class="description"><div class="vertx-eventbus-page"><p>This is the interface of <code>vertx.EventBus</code>. It is not included.</p>
+<div class="description"><div class="eventbus-page"><p>This is the interface of <code>EventBus</code>. It is not included.</p>
 </div></div>
 <div class="member method"><h2 id="methods">Methods</h2>
 <ul class="methods"><li><h3 id="methods_close">close()</h3>
 <div class=""></div>
 </li>
-<li><h3 id="methods_login">login(username, password, replyHandler)</h3>
-<div class="login"><h5 id="methods_login_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>username</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-login-page"><p>credential&#39;s username</p>
-</div></td></tr><tr><td>password</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-login-page"><p>credential&#39;s password</p>
-</div></td></tr><tr><td>replyHandler <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-login-page"><p>optional callback</p>
-</div></td></tr></tbody></table></div>
-</li>
 <li><h3 id="methods_publish">publish(address, message)</h3>
 <div class="publish"><h5 id="methods_publish_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-publish-page"><p>target address</p>
 </div></td></tr><tr><td>message</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-publish-page"><p>payload message</p>
 </div></td></tr></tbody></table></div>
-</li>
-<li><h3 id="methods_readystate">readyState()</h3>
-<div class="readystate"><h5 id="methods_readystate_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-number">number</a></td><td><div class="-readystate-page"><p>value of vertxbus connection states</p>
-</div></td></tr></table></div>
 </li>
 <li><h3 id="methods_registerhandler">registerHandler(address, handler)</h3>
 <div class="registerhandler"><h5 id="methods_registerhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-registerhandler-page"><p>target address</p>
@@ -40,6 +29,24 @@
 <div class="unregisterhandler"><h5 id="methods_unregisterhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-unregisterhandler-page"><p>target address</p>
 </div></td></tr><tr><td>handler</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-unregisterhandler-page"><p>callback handler to be removed</p>
 </div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+<div class="member property"><h2 id="properties">Properties</h2>
+<ul class="properties"><li><h3 id="properties_onclose-defines-the-callback-called-on-closing-the-connection">onclose
+
+Defines the callback called on closing the connection.</h3>
+<div class="onclose-defines-the-callback-called-on-closing-the-connection"></div>
+</li>
+<li><h3 id="properties_onerror-defines-the-callback-called-on-any-error">onerror
+
+Defines the callback called on any error.</h3>
+<div class="onerror-defines-the-callback-called-on-any-error"></div>
+</li>
+<li><h3 id="properties_onopen-defines-the-callback-called-on-opening-the-connection">onopen
+
+Defines the callback called on opening the connection.</h3>
+<div class="onopen-defines-the-callback-called-on-opening-the-connection"></div>
 </li>
 </ul>
 </div>

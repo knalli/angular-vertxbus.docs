@@ -5,6 +5,15 @@ NG_DOCS={
   "pages": [
     {
       "section": "api",
+      "id": "EventBus",
+      "shortName": "EventBus",
+      "type": "service",
+      "moduleName": "vertx",
+      "shortDescription": "This is the interface of EventBus. It is not included.",
+      "keywords": "address api callback called close closing connection defines error eventbus handler included interface message method onclose onerror onopen opening optional payload publish registerhandler removed replyhandler send service target unregisterhandler vertx"
+    },
+    {
+      "section": "api",
       "id": "knalli.angular-vertxbus",
       "shortName": "knalli.angular-vertxbus",
       "type": "overview",
@@ -19,7 +28,7 @@ NG_DOCS={
       "type": "service",
       "moduleName": "knalli.angular-vertxbus",
       "shortDescription": "A stub representing the Vert.x EventBus (core functionality)",
-      "keywords": "$log $timeout active address angular-vertxbus api apis asap automatic bus callback close closes configureconnect connect connection created credential current default details enforce ensures established event eventbus extra failurehandler functionality handle handler holding instance knalli listener login message method methods_close methods_login methods_publish methods_readystate methods_reconnect methods_registerhandler methods_send methods_unregisterhandler methods_usereconnect methods_useurlpath methods_useurlserver note object open opens optional optionally password payload publish publishes readystate reconfigure reconnect reconnection reconnects registered registerhandler registers removed removes replyhandler representing request returns send sends service skipped sockjs stub supports target theses timeout true underlaying underlying unregisterhandler urlserver username useurlpath useurlserver vert vertx vertxbus vertxeventbus vertxeventbusprovider"
+      "keywords": "$log $timeout active address angular-vertxbus api apis asap automatic bus callback close closes configureconnect connect connection created current default details enforce ensures established event eventbus extra failurehandler functionality handle handler holding instance knalli listener message method methods_close methods_publish methods_readystate methods_reconnect methods_registerhandler methods_send methods_unregisterhandler methods_usereconnect methods_useurlpath methods_useurlserver note object open opens optional optionally payload publish publishes readystate reconfigure reconnect reconnection reconnects registered registerhandler registers removed removes replyhandler representing returns send sends service skipped sockjs stub supports target theses timeout true underlaying underlying unregisterhandler urlserver useurlpath useurlserver vert vertx-eventbus vertxeventbus vertxeventbusprovider"
     },
     {
       "section": "api",
@@ -37,7 +46,7 @@ NG_DOCS={
       "type": "service",
       "moduleName": "knalli.angular-vertxbus",
       "shortDescription": "A service utilizing an underlying Vert.x Event Bus",
-      "keywords": "$interval $log $q $rootscope adding additional address adds advanced aftereventbusconnected aliases amount angular-vertxbus api bar basic broadcasting buffer bus cached callback called changes configuration connected connection console controller created credential current data deconstructor directly disconnected emit enabled ensureopenauthconnection ensureopenconnection ensures establishing event eventbus exist false features fn foo forward function getconnectionstate handler handlers internal internally invoked isconnectionopen isenabled isvalidsession json knalli log login loginrequired match message messages method methods_getconnectionstate methods_login methods_publish methods_send module ms mycontroller note observe observer open params password payload performed promise publish publishes queried queued received reconnect registerhandler registering registers rejected removes replyhandler replyto request required resolved returns send sends service session simple supporting system target timeout true type underlying unregisterhandler usage username utilizing valid vert vertx vertx-eventbus vertxeventbus vertxeventbusservice vertxeventbusserviceprovider vertxeventservice"
+      "keywords": "$interval $log $q $rootscope adding additional address adds advanced aftereventbusconnected aliases amount angular-vertxbus api bar basic broadcasting buffer bus cached callback called changes configuration connected connection console controller created current data deconstructor directly disconnected emit enabled ensureopenauthconnection ensureopenconnection ensures establishing event eventbus exist false features fn foo forward function getconnectionstate handler handlers internal internally invoked isconnectionopen isenabled isvalidsession json knalli log loginrequired match message messages method methods_getconnectionstate methods_publish methods_send module ms mycontroller note observe observer open params payload performed promise publish publishes queried queued received reconnect registerhandler registering registers rejected removes replyhandler replyto required resolved returns send sends service session simple supporting system target timeout true type underlying unregisterhandler usage utilizing valid vert vertx vertx-eventbus vertxeventbus vertxeventbusservice vertxeventbusserviceprovider vertxeventservice"
     },
     {
       "section": "api",
@@ -46,16 +55,7 @@ NG_DOCS={
       "type": "service",
       "moduleName": "knalli.angular-vertxbus",
       "shortDescription": "This is the configuration provider for knalli.angular-vertxbus.vertxEventBusService.",
-      "keywords": "$log actual address allowed amount angular-vertxbus api argument arguments automatically basicauthmanager body buffer buffered buffering builder callback checking configuration configurelogininterceptor configures connection convenient corresponding created creating default defines disables emitted enable enabled enables event events function immutable injected interceptor interval knalli logged login loginrequired message messages method mode ms names option optional overrides params password prefix progress provider reconnecting reference request required requirelogin requirement runtime send sending service session setting setup stale startup total underlying usedebug uselogininterceptor usemessagebuffer useprefix username usesockjsstateinterval utilizes valid verbose vertx vertx-eventbus vertxeventbusservice vertxeventbusserviceprovider"
-    },
-    {
-      "section": "api",
-      "id": "vertx.EventBus",
-      "shortName": "vertx.EventBus",
-      "type": "service",
-      "moduleName": "vertx",
-      "shortDescription": "This is the interface of vertx.EventBus. It is not included.",
-      "keywords": "address api callback close connection credential eventbus handler included interface login message method optional password payload publish readystate registerhandler removed replyhandler send service target unregisterhandler username vertx vertxbus"
+      "keywords": "$log allowed amount angular-vertxbus api automatically buffer buffered buffering checking configuration connection default defines disables emitted enable enabled enables event events immutable interval knalli logged login message messages method mode ms names overrides prefix progress provider reconnecting required service setting setup stale startup total underlying usedebug usemessagebuffer useprefix usesockjsstateinterval valid verbose vertx-eventbus vertxeventbusservice vertxeventbusserviceprovider"
     }
   ],
   "apis": {

@@ -7,44 +7,16 @@
 <div class="description"><div class="knalli-angular-vertxbus-vertxeventbusserviceprovider-page"><p>This is the configuration provider for <a href="#/api/knalli.angular-vertxbus.vertxEventBusService">knalli.angular-vertxbus.vertxEventBusService</a>.</p>
 </div></div>
 <div class="member method"><h2 id="methods">Methods</h2>
-<ul class="methods"><li><h3 id="methods_configurelogininterceptor">configureLoginInterceptor(the, optional)</h3>
-<div class="configurelogininterceptor"><div class="-configurelogininterceptor-page"><p>Configures and defines a login interceptor corresponding for the option #requireLogin().</p>
-<p>This utilizes #useLoginInterceptor and is available as a convenient method.</p>
-<p>At default, the created request will look similar like vertx.basicauthmanager.login.</p>
-</div><h5 id="methods_configurelogininterceptor_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>the</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-configurelogininterceptor-page"><p>address to send</p>
-</div></td></tr><tr><td>optional <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-configurelogininterceptor-page"><p>a builder for creating the message body</p>
-</div></td></tr></tbody></table><h5 id="methods_configurelogininterceptor_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-configurelogininterceptor-page"><p>this</p>
-</div></td></tr></table></div>
-</li>
-<li><h3 id="methods_enable">enable(value)</h3>
+<ul class="methods"><li><h3 id="methods_enable">enable(value)</h3>
 <div class="enable"><div class="-enable-page"><p>Enables or disables the service. This setup is immutable.</p>
 </div><h5 id="methods_enable_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-enable-page"><p>service is enabled on startup</p>
 </div> <p><em>(default: true)</em></p></td></tr></tbody></table><h5 id="methods_enable_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-enable-page"><p>this</p>
-</div></td></tr></table></div>
-</li>
-<li><h3 id="methods_requirelogin">requireLogin(value)</h3>
-<div class="requirelogin"><div class="-requirelogin-page"><p>Defines whether a login is being required or not.</p>
-</div><h5 id="methods_requirelogin_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-requirelogin-page"><p>defines requirement of a valid session</p>
-</div> <p><em>(default: false)</em></p></td></tr></tbody></table><h5 id="methods_requirelogin_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-requirelogin-page"><p>this</p>
 </div></td></tr></table></div>
 </li>
 <li><h3 id="methods_usedebug">useDebug(value)</h3>
 <div class="usedebug"><div class="-usedebug-page"><p>Enables a verbose mode in which certain events will be logged to <code>$log</code>.</p>
 </div><h5 id="methods_usedebug_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-usedebug-page"><p>verbose mode (using <code>$log</code>)</p>
 </div> <p><em>(default: false)</em></p></td></tr></tbody></table><h5 id="methods_usedebug_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-usedebug-page"><p>this</p>
-</div></td></tr></table></div>
-</li>
-<li><h3 id="methods_uselogininterceptor">useLoginInterceptor(a)</h3>
-<div class="uselogininterceptor"><div class="-uselogininterceptor-page"><p>Defines a login interceptor corresponding for the option <code>loginRequired</code>.</p>
-<p>The argument must be a valid function reference with four arguments</p>
-<ul>
-<li>send (an at runtime injected function for actual sending: i.e. <code>send(address, message, next)</code></li>
-<li>username (the used username)</li>
-<li>password (the used password)</li>
-<li>next (the callback function reference)</li>
-</ul>
-</div><h5 id="methods_uselogininterceptor_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>a</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-uselogininterceptor-page"><p>function with params <code>(send, username, password, next)</code></p>
-</div></td></tr></tbody></table><h5 id="methods_uselogininterceptor_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-uselogininterceptor-page"><p>this</p>
 </div></td></tr></table></div>
 </li>
 <li><h3 id="methods_usemessagebuffer">useMessageBuffer(value)</h3>
