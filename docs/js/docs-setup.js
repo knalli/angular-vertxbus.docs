@@ -5,12 +5,12 @@ NG_DOCS={
   "pages": [
     {
       "section": "api",
-      "id": "EventBus",
-      "shortName": "EventBus",
+      "id": "global.EventBus",
+      "shortName": "global.EventBus",
       "type": "service",
-      "moduleName": "vertx",
+      "moduleName": "global",
       "shortDescription": "This is the interface of EventBus. It is not included.",
-      "keywords": "address api callback called close closing connection defines error eventbus handler included interface message method onclose onerror onopen opening optional payload publish registerhandler removed replyhandler send service target unregisterhandler vertx"
+      "keywords": "address api callback called close closing connection defines error eventbus global handler included interface message method onclose onerror onopen opening optional payload property publish registerhandler removed replyhandler send service target unregisterhandler"
     },
     {
       "section": "api",
@@ -28,7 +28,7 @@ NG_DOCS={
       "type": "service",
       "moduleName": "knalli.angular-vertxbus",
       "shortDescription": "A stub representing the Vert.x EventBus (core functionality)",
-      "keywords": "$log $timeout active address angular-vertxbus api apis asap automatic bus callback close closes configureconnect connect connection created current default details enforce ensures established event eventbus extra failurehandler functionality handle handler holding instance knalli listener message method methods_close methods_publish methods_readystate methods_reconnect methods_registerhandler methods_send methods_unregisterhandler methods_usereconnect methods_useurlpath methods_useurlserver note object open opens optional optionally payload publish publishes readystate reconfigure reconnect reconnection reconnects registered registerhandler registers removed removes replyhandler representing returns send sends service skipped sockjs stub supports target theses timeout true underlaying underlying unregisterhandler urlserver useurlpath useurlserver vert vertx-eventbus vertxeventbus vertxeventbusprovider"
+      "keywords": "$log $timeout active address angular-vertxbus api apis asap automatic bus callback close closes configureconnect connect connection created current default details enforce ensures established event eventbus extra failurehandler functionality global handle handler holding instance knalli listener message method methods_close methods_publish methods_readystate methods_reconnect methods_registerhandler methods_send methods_unregisterhandler methods_usereconnect methods_useurlpath methods_useurlserver note object open opens optional optionally payload publish publishes readystate reconfigure reconnect reconnection reconnects registered registerhandler registers removed removes replyhandler representing returns send sends service skipped sockjs stub supports target theses timeout true underlaying underlying unregisterhandler urlserver useurlpath useurlserver vert vertx-eventbus vertxeventbus vertxeventbusprovider"
     },
     {
       "section": "api",
