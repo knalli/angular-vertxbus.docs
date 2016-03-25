@@ -44,7 +44,7 @@ This stub ensures only one object holding the current active instance of the bus
 </div></td></tr><tr><td>urlPath</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-configureconnect-page"><p>see <a href="#/api/knalli.angular-vertxbus.vertxEventBusProvider#methods_useurlpath">vertxEventBusProvider.useUrlPath()</a></p>
 </div> <p><em>(default: /eventbus)</em></p></td></tr></tbody></table></div>
 </li>
-<li><h3 id="methods_publish">publish(address, message)</h3>
+<li><h3 id="methods_publish">publish(address, message, headers)</h3>
 <div class="publish"><div class="-publish-page"><p>Publishes a message</p>
 <p>See also:</p>
 <ul>
@@ -52,6 +52,7 @@ This stub ensures only one object holding the current active instance of the bus
 </ul>
 </div><h5 id="methods_publish_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-publish-page"><p>target address</p>
 </div></td></tr><tr><td>message</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-publish-page"><p>payload message</p>
+</div></td></tr><tr><td>headers <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-publish-page"><p>optional headers</p>
 </div></td></tr></tbody></table></div>
 </li>
 <li><h3 id="methods_readystate">readyState()</h3>
@@ -67,17 +68,18 @@ default timeout for reconnect will be skipped.</p>
 </div><h5 id="methods_reconnect_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>immediately</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-reconnect-page"><p>optionally enforce a reconnect asap instead of using the timeout</p>
 </div> <p><em>(default: false)</em></p></td></tr></tbody></table></div>
 </li>
-<li><h3 id="methods_registerhandler">registerHandler(address, handler)</h3>
+<li><h3 id="methods_registerhandler">registerHandler(address, headers, handler)</h3>
 <div class="registerhandler"><div class="-registerhandler-page"><p>Registers a listener</p>
 <p>See also:</p>
 <ul>
 <li><a href="#/api/global.EventBus#methods_registerhandler">EventBus.registerHandler()</a></li>
 </ul>
 </div><h5 id="methods_registerhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-registerhandler-page"><p>target address</p>
+</div></td></tr><tr><td>headers</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-registerhandler-page"><p>optional headers</p>
 </div></td></tr><tr><td>handler</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-registerhandler-page"><p>callback handler</p>
 </div></td></tr></tbody></table></div>
 </li>
-<li><h3 id="methods_send">send(address, message, replyHandler, failureHandler)</h3>
+<li><h3 id="methods_send">send(address, message, headers, replyHandler, failureHandler)</h3>
 <div class="send"><div class="-send-page"><p>Sends a message</p>
 <p>See also:</p>
 <ul>
@@ -85,17 +87,19 @@ default timeout for reconnect will be skipped.</p>
 </ul>
 </div><h5 id="methods_send_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-send-page"><p>target address</p>
 </div></td></tr><tr><td>message</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>payload message</p>
+</div></td></tr><tr><td>headers <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>optional headers</p>
 </div></td></tr><tr><td>replyHandler <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-send-page"><p>optional callback</p>
 </div></td></tr><tr><td>failureHandler <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-send-page"><p>optional callback (since Vert.x 3.0.0)</p>
 </div></td></tr></tbody></table></div>
 </li>
-<li><h3 id="methods_unregisterhandler">unregisterHandler(address, handler)</h3>
+<li><h3 id="methods_unregisterhandler">unregisterHandler(address, headers, handler)</h3>
 <div class="unregisterhandler"><div class="-unregisterhandler-page"><p>Removes a registered a listener</p>
 <p>See also:</p>
 <ul>
 <li><a href="#/api/global.EventBus#methods_unregisterhandler">EventBus.unregisterHandler()</a></li>
 </ul>
 </div><h5 id="methods_unregisterhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-unregisterhandler-page"><p>target address</p>
+</div></td></tr><tr><td>headers</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-unregisterhandler-page"><p>optional headers</p>
 </div></td></tr><tr><td>handler</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-unregisterhandler-page"><p>callback handler to be removed</p>
 </div></td></tr></tbody></table></div>
 </li>
