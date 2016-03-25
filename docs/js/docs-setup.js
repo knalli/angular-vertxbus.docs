@@ -10,7 +10,7 @@ NG_DOCS={
       "type": "service",
       "moduleName": "global",
       "shortDescription": "This is the interface of EventBus. It is not included.",
-      "keywords": "address api callback called close closing connection defines error eventbus failurehandler global handler included interface message method onclose onerror onopen opening optional payload property publish registerhandler removed replyhandler send service target unregisterhandler"
+      "keywords": "address api callback called close closing connection defines error eventbus failurehandler global handler headers included interface message method onclose onerror onopen opening optional payload property publish registerhandler removed replyhandler send service target unregisterhandler"
     },
     {
       "section": "api",
