@@ -29,7 +29,12 @@ This stub ensures only one object holding the current active instance of the bus
 </li>
 </ul>
 <div class="member method"><h2 id="methods">Methods</h2>
-<ul class="methods"><li><h3 id="methods_close">close()</h3>
+<ul class="methods"><li><h3 id="methods_applydefaultheaders">applyDefaultHeaders(headers)</h3>
+<div class="applydefaultheaders"><div class="-applydefaultheaders-page"><p>Stores the given default headers</p>
+</div><h5 id="methods_applydefaultheaders_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>headers</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-applydefaultheaders-page"><p>additional standard headers</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_close">close()</h3>
 <div class=""><div class="-close-page"><p>Closes the underlying connection.</p>
 <p>Note: If automatic reconnection is active, a new connection will be established after the <a href="#/api/knalli.angular-vertxbus.vertxEventBusProvider#methods_usereconnect">reconnect timeout</a>.</p>
 <p>See also:</p>
@@ -75,11 +80,11 @@ default timeout for reconnect will be skipped.</p>
 <li><a href="#/api/global.EventBus#methods_registerhandler">EventBus.registerHandler()</a></li>
 </ul>
 </div><h5 id="methods_registerhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-registerhandler-page"><p>target address</p>
-</div></td></tr><tr><td>headers</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-registerhandler-page"><p>optional headers</p>
+</div></td></tr><tr><td>headers <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-registerhandler-page"><p>optional headers</p>
 </div></td></tr><tr><td>handler</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-registerhandler-page"><p>callback handler</p>
 </div></td></tr></tbody></table></div>
 </li>
-<li><h3 id="methods_send">send(address, message, headers, replyHandler, failureHandler)</h3>
+<li><h3 id="methods_send">send(address, message, headers, replyHandler)</h3>
 <div class="send"><div class="-send-page"><p>Sends a message</p>
 <p>See also:</p>
 <ul>
@@ -87,9 +92,8 @@ default timeout for reconnect will be skipped.</p>
 </ul>
 </div><h5 id="methods_send_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-send-page"><p>target address</p>
 </div></td></tr><tr><td>message</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>payload message</p>
-</div></td></tr><tr><td>headers <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>optional headers</p>
+</div></td></tr><tr><td>headers</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>optional headers</p>
 </div></td></tr><tr><td>replyHandler <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-send-page"><p>optional callback</p>
-</div></td></tr><tr><td>failureHandler <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-send-page"><p>optional callback (since Vert.x 3.0.0)</p>
 </div></td></tr></tbody></table></div>
 </li>
 <li><h3 id="methods_unregisterhandler">unregisterHandler(address, headers, handler)</h3>
@@ -99,7 +103,7 @@ default timeout for reconnect will be skipped.</p>
 <li><a href="#/api/global.EventBus#methods_unregisterhandler">EventBus.unregisterHandler()</a></li>
 </ul>
 </div><h5 id="methods_unregisterhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-unregisterhandler-page"><p>target address</p>
-</div></td></tr><tr><td>headers</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-unregisterhandler-page"><p>optional headers</p>
+</div></td></tr><tr><td>headers <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-unregisterhandler-page"><p>optional headers</p>
 </div></td></tr><tr><td>handler</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-unregisterhandler-page"><p>callback handler to be removed</p>
 </div></td></tr></tbody></table></div>
 </li>

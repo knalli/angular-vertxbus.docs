@@ -7,7 +7,16 @@
 <div class="description"><div class="knalli-angular-vertxbus-vertxeventbusserviceprovider-page"><p>This is the configuration provider for <a href="#/api/knalli.angular-vertxbus.vertxEventBusService">knalli.angular-vertxbus.vertxEventBusService</a>.</p>
 </div></div>
 <div class="member method"><h2 id="methods">Methods</h2>
-<ul class="methods"><li><h3 id="methods_enable">enable(value)</h3>
+<ul class="methods"><li><h3 id="methods_authhandler">authHandler(value)</h3>
+<div class="authhandler"><div class="-authhandler-page"><p>Function or service reference name for function checking the authorization state.</p>
+<p>The result of the function must be a boolean or promise. The handler can (but is not required) to create authorization on demand.
+If it is resolved, the authorization is valid.
+If it is rejected, the authorization is invalid.</p>
+</div><h5 id="methods_authhandler_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-string">string</a><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="-authhandler-page"><p>authorization handler (either a function or a service name)</p>
+</div></td></tr></tbody></table><h5 id="methods_authhandler_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-authhandler-page"><p>promise</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_enable">enable(value)</h3>
 <div class="enable"><div class="-enable-page"><p>Enables or disables the service. This setup is immutable.</p>
 </div><h5 id="methods_enable_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-enable-page"><p>service is enabled on startup</p>
 </div> <p><em>(default: true)</em></p></td></tr></tbody></table><h5 id="methods_enable_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-enable-page"><p>this</p>
