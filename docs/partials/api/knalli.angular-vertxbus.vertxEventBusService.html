@@ -107,12 +107,16 @@ module.controller('MyController', function('vertxEventService') {
 <div class="removelistener"><div class="-removelistener-page"><p>See (using <a href="#/api/knalli.angular-vertxbus.vertxEventBusService#methods_registerhandler">unregisterHandler()</a>)</p>
 </div></div>
 </li>
-<li><h3 id="methods_send">send(address, message, headers)</h3>
+<li><h3 id="methods_send">send(address, message, headers, options)</h3>
 <div class="send"><div class="-send-page"><p>Sends a message to the specified address (using <a href="#/api/knalli.angular-vertxbus.vertxEventBus#methods_send">vertxEventBus.send()</a>).</p>
 </div><h5 id="methods_send_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>address</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="-send-page"><p>target address</p>
 </div></td></tr><tr><td>message</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>payload message</p>
 </div></td></tr><tr><td>headers</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>headers</p>
-</div></td></tr></tbody></table><h5 id="methods_send_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>promise</p>
+</div></td></tr><tr><td>options</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="-send-page"><p>additional options</p>
+</div><table><thead><tr><th>Property</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>timeout <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-number">number</a></td><td><div class="-send-page"><p>(in ms) after which the promise will be rejected</p>
+</div> <p><em>(default: 10000)</em></p></td></tr><tr><td>expectReply <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="-send-page"><p>if false, the promise will be resolved directly and
+no replyHandler will be created</p>
+</div> <p><em>(default: true)</em></p></td></tr></tbody></table></td></tr></tbody></table><h5 id="methods_send_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="-send-page"><p>promise</p>
 </div></td></tr></table></div>
 </li>
 <li><h3 id="methods_un">un()</h3>
